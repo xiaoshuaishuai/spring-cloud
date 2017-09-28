@@ -1,7 +1,7 @@
 如何在修改了仓库配置信息之后，同步刷新到使用客户端？？？？
 
 1.@RefreshScope
-
+ 
 2.引入<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
