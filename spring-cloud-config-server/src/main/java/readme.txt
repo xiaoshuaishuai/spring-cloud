@@ -3,7 +3,7 @@
 person.age: 18
 person.email: xs1@gamil.com
 person.name: xiaoming
-
+ 
 环境信息:
 ****************************
 name=person
