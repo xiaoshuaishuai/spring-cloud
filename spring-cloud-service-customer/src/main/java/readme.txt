@@ -30,3 +30,12 @@ hello:shuai
 访问 消费者 http://localhost:8110/hello/shuaishuai
 输出正常 说明已经正常消费.
 
+
+增加熔断器 hystrix
+1.application.properties
+#开启熔断器hystrix
+feign.hystrix.enabled=true
+2.编写hystrix类实现消费接口
+3.消费接口增加主键 fallback
+@FeignClient(name="spring-cloud-service-provider",fallback = HelloRemoteHystrix.class) // 服务提供者name
+
