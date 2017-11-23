@@ -12,4 +12,10 @@ public class HelloController {
 		System.out.println("HelloController.hello()-node-01" + message);
 		return "hello:-node-01" + message;
 	}
+
+	@RequestMapping("/ribbon")
+	public String ribbon() {
+		System.out.println("HelloController.ribbon()-node-01");
+		return "hello:-node-01 ribbon";
+	}
 }

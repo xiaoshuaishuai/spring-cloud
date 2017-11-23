@@ -12,4 +12,10 @@ public class HelloController {
 		System.out.println("HelloController.hello()" + message);
 		return "hello:" + message;
 	}
+
+	@RequestMapping("/ribbon")
+	public String ribbon() {
+		System.out.println("HelloController.ribbon()");
+		return "hello:ribbon";
+	}
 }
