@@ -1,0 +1,2 @@
+服务消费者，需要配合spring-cloud-eureka 注册中心使用
+ribbon使用只需要在生成restTemplete bean上面加入@loadblance注解

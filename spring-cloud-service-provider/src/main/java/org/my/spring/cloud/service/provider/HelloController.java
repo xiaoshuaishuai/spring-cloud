@@ -12,6 +12,11 @@ public class HelloController {
 		System.out.println("HelloController.hello()" + message);
 		return "hello:" + message;
 	}
+	@RequestMapping("/hellodesc")
+	public String hello(@RequestParam String message,@RequestParam String desc) {
+		System.out.println("HelloController.hello()" + message+",desc:"+desc);
+		return "hello:" + message+",desc:"+desc;
+	}
 
 	@RequestMapping("/ribbon")
 	public String ribbon() {

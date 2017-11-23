@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.my</groupId>
-	<artifactId>spring-cloud-service-provider</artifactId>
+	<artifactId>spring-cloud-service-customer-ribbon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-cloud-service-provider</name>
+	<name>spring-cloud-service-customer-ribbon</name>
 	<url>http://maven.apache.org</url>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
@@ -30,15 +30,33 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!--  -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-ribbon</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.my</groupId>
 			<artifactId>spring-cloud-commons</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+<!-- 		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+		
+		使用Apache HttpClient替换Feign原生httpclient
+    	<dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-httpclient</artifactId>
+            <version>8.17.0</version>
+        </dependency> -->
 	</dependencies>
 </project>
