@@ -47,7 +47,7 @@ Spring Cloud Zookeeper：操作Zookeeper的工具包，用于使用zookeeper方�
 
 Spring Cloud CLI：基于 Spring Boot CLI，可以让你以命令行方式快速建立云组件。
 
-Feign：Feign是一种声明式、模板化的HTTP客户端。Urlconnection httpcliet，用再服务消费端。
+Feign：Feign是一种声明式、模板化的HTTP客户端。Urlconnection httpcliet，用再服务消费端。(合并了ribbon&hystrix)
 
 Spring Cloud Task：提供云端计划任务管理、任务调度。
 
