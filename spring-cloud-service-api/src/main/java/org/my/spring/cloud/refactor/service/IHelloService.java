@@ -22,5 +22,8 @@ public interface IHelloService {
 
 	@RequestMapping(value = "/postuser", method = RequestMethod.POST)
 	String hello(@RequestBody User user);
+	
+	@RequestMapping(value = "/hello2", method = RequestMethod.GET)
+	String hello2(@RequestParam(value="message") String message);
 
 }

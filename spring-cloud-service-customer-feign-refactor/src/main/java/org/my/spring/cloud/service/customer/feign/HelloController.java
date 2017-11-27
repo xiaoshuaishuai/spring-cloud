@@ -40,4 +40,9 @@ public class HelloController {
 		u.setPwd("Aa222222222");
 		return refactorHelloService.hello(u);
 	}
+	
+	@RequestMapping(value = "/hello2", method = RequestMethod.GET)
+	String hello2(@RequestParam(value="message") String message) {
+		return refactorHelloService.hello2(message);
+	}
 }
