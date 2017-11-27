@@ -1,4 +1,4 @@
-![Image text](https://github.com/xiaoshuaishuai/spring-cloud/blob/master/static-img/SpringCloudTechs.png)
+![Image text](https://raw.githubusercontent.com/xiaoshuaishuai/spring-cloud/master/static-img/SpringCloudTechs.png)
 <h1>Spring Cloud Main Project  主要工程组件</h1>
 
 Spring Cloud Config ：配置中心
