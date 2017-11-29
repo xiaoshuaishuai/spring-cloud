@@ -2,7 +2,6 @@
 
 ![Image text](https://raw.githubusercontent.com/xiaoshuaishuai/spring-cloud/master/static-img/simpleSpringCloud.jpg)
 
-
 <h1>Spring Cloud组件概述</h1>
 
 ![Image text](https://raw.githubusercontent.com/xiaoshuaishuai/spring-cloud/master/static-img/SpringCloudTechs.png)
