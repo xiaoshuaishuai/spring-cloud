@@ -27,3 +27,10 @@ Status Code:401
 Remote Address:[::1]:8200
 Referrer Policy:no-referrer-when-downgrade
 
+
+
+
+*************
+默认的zuulfilter有问题
+如果在post 阶段发生异常，页面将不会得到响应。
+
