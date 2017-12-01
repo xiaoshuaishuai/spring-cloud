@@ -23,3 +23,5 @@ label=master
 [/{label}/{name}-{profiles}.json]
 [/{name}/{profile}/{label}/**]
 [/{name}/{profile}/{label}/**]
+
+http://localhost:8888/dev/system-zuul.properties
