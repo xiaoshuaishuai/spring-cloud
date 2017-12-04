@@ -41,6 +41,14 @@ public class PeopleControllerTest {
 	public void sumStatic() {
 		System.out.println(peopleRepository.sumPeople().toString());
 	}
+	@Test
+	public void nativePeople() {
+		System.out.println(peopleRepository.nativePeople().toString());
+	}
+	@Test
+	public void nativePeople2() {
+		System.out.println(peopleRepository.nativePeople2("xx3").toString());
+	}
 
 	@Test
 	public void sum() {
