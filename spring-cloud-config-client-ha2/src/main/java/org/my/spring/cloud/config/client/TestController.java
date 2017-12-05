@@ -1,0 +1,45 @@
+package org.my.spring.cloud.config.client;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RefreshScope// 使用该注解的类，会在接到SpringCloud配置中心配置刷新的时候，自动将新的配置更新到该类对应的字段中。
+public class TestController {
+	 
+	@Value("${person.name}")
+	private String personName;
+	
+	@Value("${person.age}")
+	private String personAge;
+	
+	@Value("${person.email}")
+	private String personEmail;
+	
+	@Value("${spring.datasource.driver-class-name}")
+	private String driverClass;
+	
+	@Value("${spring.datasource.username}")
+	private String uname;
+	
+	@Value("${spring.datasource.password}")
+	private String pwd;
+	
+	@Value("${spring.datasource.url}")
+	private String url;
+
+	@RequestMapping("/person")
+	public String home() {
+		
+		return personName+","+personAge+","+personEmail;
+	}
+	
+	@RequestMapping("/db")
+	public String db() {
+		
+		return driverClass+",</br>"+uname+",</br>"+pwd+",</br>"+url;
+	}
+
+}

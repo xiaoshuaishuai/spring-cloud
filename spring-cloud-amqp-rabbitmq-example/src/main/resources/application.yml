@@ -1,0 +1,8 @@
+spring:
+ application:
+  name:spring-boot-amqp-rabbitmq-example
+ rabbitmq:
+  host:localhost
+  port:5672
+  username:springcloud
+  password:springcloud
